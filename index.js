@@ -18,7 +18,9 @@ client.on('message', message => {
 	if (!message.author.bot) {
 	    if (msgc.includes('ping') || msgc.includes('Ping') || msgc.includes('pong') || msgc.includes('Pong')) {
 	    	message.channel.send('On ne joue pas avec le Shérif ' + sherif);
-	    }
+	    }else if (msgc.includes('Bonjour') || msgc.includes('bonjour')) {
+        message.channel.send('Bien le bonjour ' + message.author.username + ', je suis le Shérif et je suis là pour faire régner l\'ordre.');
+			}
 		var badwords = ["JUL", "Jul", "jul", "<:jul:365030665630121985>"];
 		var i = 0;
 		while(i<badwords.length){
