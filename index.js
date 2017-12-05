@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const token = "MzgzNTY5OTk1MDUwOTA5Njk3.DPmwBg.2T3W08C6-rbbbc3kp4-wyNmo_MM";
+const token = process.env.BOT_TOKEN;
 var prefix        = "s!";
 var mention       = "<@383569995050909697>";
 var sherif 		  = '<:sherif:258244124220588043>';
